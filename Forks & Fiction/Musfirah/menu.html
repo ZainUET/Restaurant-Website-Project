@@ -1,0 +1,296 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Food Menu</title>
+    <link rel="stylesheet" href="/style.css">
+    <!-- Box Icons -->
+    <link rel="stylesheet"
+    href="https://cdn.jsdelivr.net/npm/boxicons@latest/css/boxicons.min.css">
+
+    <style>
+        body{
+            font-family: "Poppins", sans-serif;
+            margin: 0;
+            scroll-behavior: smooth;      
+           }
+        .container{
+            padding: 0px 10px 30px 10px;
+            display: grid;
+            background-color: #f4eae8;
+            grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+            grid-gap: 20px;
+        }
+        .heading{
+            margin-top: 70px;
+                     
+            background-color:#092b54;
+            color:#fff;
+            margin-bottom: 30px;
+            padding: 15px 0;
+            grid-column: 1/-1;
+            text-align: center;
+        }
+        h1{
+            font-size: 30px;
+            letter-spacing: 10px;
+            margin-bottom: 10px;
+        }
+        h3{
+            font-size: 22px;
+            font-weight: 600;
+            letter-spacing: normal;
+        }
+        .food-items{
+            display: flex;
+            flex-direction: column;
+            position: relative;
+            grid-template-rows: auto 1fr;
+            border-radius: 15px;
+            box-shadow: 0 0 15px rgba(0, 0, 0, 0.1);
+        }
+        
+
+        .food-item img {
+        width: 100%;
+        position: relative;
+        height: 50px;
+        object-fit: cover;
+        border: 5px dashed #092b54; 
+        border-radius:10%; 
+        
+        }
+       
+      
+
+        .btn{
+            padding: 10px 20px;
+            border: 2px solid #092b54;
+            border-radius: 40px;
+            color: #092b54;
+            font-weight: 500;
+            cursor: pointer;
+        }
+
+        .btn:hover{
+            letter-spacing: 2px;
+            color: #fff;
+            background: #092b54;
+        }
+    </style>
+</head>
+<body>
+
+      <!-- Navbar -->
+      <header>
+        <a href="/index.html" class="logo"> <img src="/Images/logo.png" alt="">Fork & Fiction</a>
+        <div class="bx bx-menu" id="menu-icon"></div>
+        
+        <ul class="navbar">
+            <li><a href="/index.html">Home</a></li>
+            <li><a href="/Abdul Ahad/Careers.html">Careers</a></li>
+            <li><a href="/Ali Zargham/aboutus1.html">About</a></li>
+            <li><a href="/Ali Hassan/final modification.html">Reservation</a></li>
+            <li><a href="/Haris/contact-us.html">Contact Us</a></li>
+            <li><a href="/Hussain/FinalProject(hussain).html">News</a></li>
+        </ul>
+     </header>
+  
+    <div class="container">
+        <div class="heading">
+            <h1>Fork & Fiction</h1>
+            <h3>&mdash; MENU &mdash;</h3>
+        </div>
+        <div class="food-items">
+            <img src="/Musfirah/Smoky burger.jpg" alt="Smoky Burger" style="border-radius:5%">
+            <div class="details">
+                <div class="details-sub">
+                    <h2>Smoky Burger</h2>
+                    <h2 class="price">Rs 750</h2>
+                </div>
+                <button class="btn">Order Now</button>
+            </div>
+        </div>
+
+        <div class="food-items">
+            <img src="/Musfirah/Pizza.jpg" alt="Cheese Pizza" style="border-radius:5%">
+            <div class="details">
+                <div class="details-sub">
+                    <h2>Cheese Pizza</h2>
+                    <h2 class="price">Rs 1,800</h2>
+                </div>
+                <button class="btn">Order Now</button>
+            </div>
+        </div>
+
+        <div class="food-items">
+            <img src="/Musfirah/HCG.jpg" alt="Honey Garlic Chicken" style="border-radius:5%">
+            <div class="details">
+                <div class="details-sub">
+                    <h2>Honey Garlic Chicken</h2>
+                    <h2 class="price">Rs 1,200</h2>
+                </div>
+                <button class="btn">Order Now</button>
+            </div>
+        </div>
+
+        <div class="food-items">
+            <img src="/Musfirah/FF.jpg" alt="French Fries" style="border-radius:5%">
+            <div class="details">
+                <div class="details-sub">
+                    <h2>French Fries</h2>
+                    <h2 class="price">Rs 600</h2>
+                </div>
+                <button class="btn">Order Now</button>
+            </div>
+        </div>
+
+
+        <div class="food-items">
+            <img src="/Musfirah/CS.jpg" alt="Chicken Soup" style="border-radius:5%">
+            <div class="details">
+                <div class="details-sub">
+                    <h2>Chicken Soup</h2>
+                    <h2 class="price">Rs 800</h2>
+                </div>
+                <button class="btn">Order Now</button>
+            </div>
+        </div>
+
+        <div class="food-items">
+            <img src="/Musfirah/coffee.jpg" alt="Coffee" style="border-radius:5%">
+            <div class="details">
+                <div class="details-sub">
+                    <h2>Coffee</h2>
+                    <h2 class="price">Rs 300</h2>
+                </div>
+                <button class="btn">Order Now</button>
+            </div>
+        </div>
+
+        <div class="food-items">
+            <img src="/Musfirah/Sandwhich.jpg" alt="Cheese Sandwich" style="border-radius:5%">
+            <div class="details">
+                <div class="details-sub">
+                    <h2>Cheese Sandwich</h2>
+                    <h2 class="price">Rs 500</h2>
+                </div>
+                <button class="btn">Order Now</button>
+            </div>
+        </div>
+
+        
+        <div class="food-items">
+            <img src="biryani" alt="Cheese Sandwich" style="border-radius:5%">
+            <div class="details">
+                <div class="details-sub">
+                    <h2>Sindhi Biryani</h2>
+                    <h2 class="price">Rs 450</h2>
+                </div>
+                <button class="btn">Order Now</button>
+            </div>
+        </div>
+
+        <div class="food-items">
+            <img src="tikka.jpeg" alt="Chicken Tikka" style="border-radius:5%">
+            <div class="details">
+                <div class="details-sub">
+                    <h2>Chicken Tikka</h2>
+                    <h2 class="price">Rs 350</h2>
+                </div>
+                <button class="btn">Order Now</button>
+            </div>
+        </div>
+
+        <div class="food-items">
+
+            <img src="/Musfirah/spaghetti.jpg" alt="Chicken Tikka" style="border-radius:5%">
+            <div class="details">
+                <div class="details-sub">
+                    <h2>Spaghetti</h2>
+                    <h2 class="price">Rs 650</h2>
+                </div>
+                <button class="btn">Order Now</button>
+            </div>
+        </div>
+
+        <div class="food-items">
+            <img src="/Musfirah/Drinks.jpg" alt="Chicken Tikka" style="border-radius:5%">
+            <div class="details">
+                <div class="details-sub">
+                    <h2>Drinks</h2>
+                    <h2 class="price">Rs 250</h2>
+                </div>
+                <button class="btn">Order Now</button>
+            </div>
+        </div>
+
+        <div class="food-items">
+            <img src="Sweet.jpg" alt="Chicken Tikka" style="border-radius:5%">
+            <div class="details">
+                <div class="details-sub">
+                    <h2>Sweet Dish</h2>
+                    <h2 class="price">Rs 450</h2>
+                </div >
+                <button class="btn">Order Now</button>
+            </div>
+        </div>
+
+
+    </div>
+
+
+    <!-- Footer -->
+    <footer>
+        <div class="frow">
+            <div class="fcol">
+                <img src="salad.jpeg" alt="" class="logo">
+                <p>Thank you for visiting Forks & Fiction! We’re dedicated to serving delicious dishes made from fresh, 
+                    locally sourced ingredients. Whether dining in or taking away, we aim to provide an
+                     unforgettable experience. Follow us on social media for updates and specials.
+                      We can’t wait to see you again!</p>
+                 
+            </div>
+            <div class="fcol">
+                <h3>Office <div class="funderline"><span></span></div></h3>
+                <p>123 Food Street,</p>
+                <p> Gulberg, Lahore,</p>
+                <p>Pakistan</p>
+                <p class="femail-id">fnf@gmail.com</p>
+                <h4>+92 123 456789</h4>
+            </div>
+            <div class="fcol">
+                <h3>Links<div class="funderline"><span></span></div></h3>
+                <ul>
+                    <li><a href="">FAQs</a></li>
+                    <li><a href="">Privarcy Policy</a></li>
+                    <li><a href="">Terms & Conditions</a></li>
+                    <li><a href="">Features</a></li>
+                    <li><a href="">Help Center</a></li>
+                </ul>
+            </div>
+            <div class="fcol">
+                <h3>NewsLetter<div class="funderline"><span></span></div></h3>
+                <form action="">
+                    <i class='bx bxs-envelope' ></i>
+                    <input type="email" placeholder="Enter Your E-mail ID"  required>
+                    <button type="submit"><i class='bx bx-right-arrow-alt'></i></button>
+                </form>
+                <div class="fsocial-icons">
+                    <i class='bx bxl-facebook-circle' ></i>
+                    <i class='bx bxl-twitter' ></i>
+                    <i class='bx bxl-whatsapp' ></i>
+                    <i class='bx bxl-pinterest' ></i>
+                </div>
+            </div>
+        </div>
+        <hr>
+        <p class="copyright">&#169;Designed By Musfirah - All Right Reserved</p>
+    </footer>
+
+
+
+
+</body>
+</html>

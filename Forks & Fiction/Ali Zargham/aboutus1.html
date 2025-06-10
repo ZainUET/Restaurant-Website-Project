@@ -1,0 +1,530 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About US</title>
+    
+    <!-- <link rel="stylesheet" href="/hf.css"> -->
+<style>
+    /* Google Fonts */
+@import url('//fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700&display=swap');
+
+*{
+    /* margin: 0px;
+    padding: 0px; */
+    box-sizing: border-box;
+    scroll-padding-top: 2rem ;
+    list-style: none;
+    text-decoration: none;
+    scroll-behavior: smooth;
+    font-family: "Poppins", sans-serif;
+}
+
+
+
+
+
+
+:root{
+    --main-color: #16b978 ;
+    --second-color:#092b54;
+}
+
+/* Zain's code */
+
+
+header{
+    position: fixed;
+    width: 100%;
+    top: 0;
+    right: 0;
+    z-index: 1000;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 15px 10%;
+    background-color: var(--second-color);
+    transition: 0.2s;
+}
+.logo{
+    display: flex;
+    padding: 0px auto;
+    align-items: center;
+    font-size: 1.1rem;
+    font-weight:600 ;
+    color: rgb(252, 252, 252);
+    
+    
+}
+
+.logo img{
+    width: 35px;
+    margin-right: 10px;
+}
+.navbar{
+    display: flex;
+}
+
+.navbar a{
+    font-size: 1rem;
+    padding: 10px 20px;
+    color: #ffffff;
+    font-weight: 500;
+}
+
+.navbar a:hover{
+    color: white;
+    background: var(--main-color);
+    border-radius: 4px;
+}
+#menu-icon{
+    font-size: 24px;
+    cursor: pointer;
+    z-index: 10001;
+    display: none;
+}
+
+
+
+
+
+.heading{
+    margin-top: 100px;
+    font-size: 40px;
+    background-color: #092b54;
+    color: white;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    text-align: center;}
+.passage{
+    text-justify: auto;
+    text-align: start;
+    font-size: 25px;
+    /* font-weight: bolder; */
+    padding-left: 1%;
+    padding-right: 1%;
+    margin-left: 0%;
+    margin-right: 5%;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    background-image: url("bgimage.jpeg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    border-radius: 10px;
+}
+.lhrpassage{
+    text-justify: auto;
+    text-align: start;
+    font-size: 24px;
+    padding-left: 1%;
+    padding-right: 1%;
+    margin-left: 5%;
+    font-size: 25px;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+.lhrconatiner{
+    display: flex;
+}
+.lhrimage{
+    margin-top: 11%;
+    margin-right: 8%;
+}
+.lhrimage img{
+    border-radius: 20px;
+
+}
+.fsdimage{
+    margin-top: 11%;
+    margin-right: 8%;
+}
+.fsdimage img{
+    border-radius: 20px;
+}
+.fsdpassage{
+    text-justify: auto;
+    text-align: start;
+    padding-left: 1%;
+    padding-right: 0%;
+    margin-right: 1%;
+    margin-left: 5%;
+    font-size: 25px;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+.fsdcontainer{
+    display: flex;
+}
+.distinctions{
+    font-size: 30px;
+    background-color: #092b54;
+    color: white;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    margin-left: 5%;
+    width: 90%;
+}
+.distinctionpassage{
+    text-justify: auto;
+    text-align: start;
+    padding-left: 1%;
+    padding-right: 0%;
+    margin-right: 1%;
+    margin-left: 5%;
+    font-size: 25px;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+.distinctioncontainer
+{
+    display: flex;
+}
+.distinctionimage img{
+    margin-top:52%;
+    width :500px;
+    border-radius:20px;
+}
+.message{
+    font-size: 30px;
+    background-color: #092b54;
+    color: white;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    margin-left: 5%;
+    width: 90%;
+    text-align: center;
+}
+.text{
+    text-justify: auto;
+    text-align: start;
+    padding-left: 1%;
+    padding-right: 0%;
+    margin-right: 5%;
+    margin-left: 5%;
+    font-size: 25px;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;}
+.container{
+    display: flex;
+}
+.image img{
+    border-radius: 20px;
+    width: 400px;
+}
+.image{
+    margin-top: 2%;
+    margin-right: 8%;
+}
+.network{
+    font-size: 30px;
+    background-color: #092b54;
+    color: white;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    margin-left: 5%;
+    width: 90%;
+}
+.fsd{
+    margin: 20px;
+}
+.lahore{
+    margin: 20px;
+}
+.title{
+    margin-left: 20px;
+}
+.team{
+    font-size: 30px;
+    background-color: #092b54;
+    color: white;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    margin-left: 5%;
+    width: 90%;
+    text-align: center;
+}
+.ali img{
+width: 170px;
+height: 170px;
+border-radius: 50%;
+margin-bottom: 5px;
+margin-top: 10%;
+padding-bottom: 15px;
+}
+.ali{
+width: 300px;
+padding: 20px;
+text-align: center;
+border: 2px solid #092b54;
+border-radius: 10px;
+background-color: #092b54;
+font-size: larger;
+font-weight: 1000;
+color: white;
+font-size: 20px;
+}
+.ahad img{
+width: 200px;
+height: 200px;
+border-radius: 50%;
+margin-bottom: 10px;
+}
+.alihassan{
+width: 300px;
+padding: 20px;
+text-align: center;
+border: 2px solid #0e1e50;
+border-radius: 10px;
+background-color: #092b54;
+font-size: 20px;
+font-weight: 1000;
+color: white;
+}
+.ahad{
+width: 300px;
+padding: 20px;
+text-align: center;
+border: 2px solid #0e1e50;
+border-radius: 10px;
+background-color: #092b54;
+font-size: larger;
+font-weight: 1000;
+color: white;
+font-size: 20px;
+}
+.alihassan img{
+width: 200px;
+height: 200px;
+border-radius: 50%;
+margin-bottom: 10px;
+} 
+.zain img{
+width: 200px;
+height: 200px;
+border-radius: 50%;
+margin-bottom: 10px;
+}  
+.zain{
+width: 300px;
+padding: 20px;
+text-align: center;
+border: 2px solid #0e1e50;
+border-radius: 10px;
+background-color: #092b54;
+font-size: larger;
+font-weight: 1000;
+color: white;
+font-size: 20px;
+}
+.builder img{
+width: 200px;
+height: 275px;
+border-radius: 50%;
+margin-bottom: 0px;
+padding-bottom: 45px;
+padding-top: 10px;
+}  
+.builder{
+width: 300px;
+padding: 20px;
+text-align: center;
+border: 2px solid #0e1e50;
+border-radius: 10px;
+background-color: #092b54;
+font-size: larger;
+font-weight: 1000;
+color: white;
+font-size: 20px;
+}
+.haris img{
+width: 200px;
+height: 200px;
+border-radius: 50%;
+margin-bottom: 10px;
+}  
+.haris{
+width: 300px;
+padding: 20px;
+text-align: center;
+border: 2px solid #0e1e50;
+border-radius: 10px;
+background-color: #092b54;
+font-size: larger;
+font-weight: 1000;
+color: white;
+font-size: 20px;
+}
+.musfirah img{
+width: 200px;
+height: 200px;
+border-radius: 50%;
+margin-bottom: 10px;
+}  
+.musfirah{
+background-color: #092b54;
+width: 300px;
+padding: 20px;
+text-align: center;
+border: 2px solid #0e1e50;
+border-radius: 10px;
+font-weight: 1000;
+color: white;
+font-size: 20px;
+}
+.teamcontainer{
+display: flex;
+justify-content: space-around;
+padding: 20px;
+}
+.container2{
+display: flex;
+justify-content: space-evenly;
+padding: 0px;
+}
+.con{
+display: flex;
+background-color: white;
+margin-left: 5%;
+margin-right: 5%;
+}
+.restraunt{
+margin-right:3%;
+}
+.restraunt img{
+border-radius: 10px;
+margin-top: 2% ;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+</style>
+
+
+
+</head>
+<body>
+
+
+    <!-- Navbar -->
+    <header>
+        <a href="/index.html" class="logo"> <img src="/Images/logo.png" alt="">Fork & Fiction</a>
+        <div class="bx bx-menu" id="menu-icon"></div>
+        
+        <ul class="navbar">
+            <li><a href="/index.html">Home</a></li>
+            <li><a href="/Abdul Ahad/Careers.html">Careers</a></li>
+            <li><a href="/Ali Zargham/aboutus1.html">About</a></li>
+            <li><a href="/Ali Hassan/final modification.html">Reservation</a></li>
+            <li><a href="/Haris/contact-us.html">Contact Us</a></li>
+            <li><a href="/Hussain/FinalProject(hussain).html">News</a></li>
+        </ul>
+     </header>
+    
+<div class="heading">
+    <h1>ABOUT US</h1>
+</div>
+<div class="con">
+<div class="passage">
+    <p> Welcome to Fork and Fiction, proudly recognized as the largest restaurant chain in Pakistan! Founded in 1987, we have been serving delicious meals and creating memorable dining experiences for over three decades. Our commitment to quality and customer satisfaction has made us a beloved choice for families and food lovers across the nation. Join us and discover why we’re at the forefront of the culinary scene in Pakistan!</p>
+</div>
+<div class="restraunt">
+    <img src="restraunt.jpeg" alt="" style="width: 400px; height : 270px";>
+</div>
+</div>
+<div class="network">
+   <center><h1>OUR NETWORK</h1></center>
+</div>
+<div class="lhrconatiner">
+   <div class="lhrpassage">
+    <h1 style="color: #092b54">LAHORE</h1>
+     <p>We are pleased to inform you that our restaurant has a branch in Lahore, serving our valued customers with dedication and passion. Under the supervision of Haris Nadeem, our team is committed to maintaining the high standards of quality and service that define our brand. We invite you to join us and enjoy our delicious offerings in a warm and inviting atmosphere!</p>
+   </div>
+   <div class="lhrimage">
+    <img src="lahorebranch.jpg" alt="lhrimage" width="500px">
+   </div>
+</div>
+<div class="fsd">
+    
+</div>
+<div class="fsdcontainer">
+    <div class="fsdpassage">
+        <h1 style="color: #092b54">FAISALABAD</h1>
+      <p>We are pleased to inform you that our restaurant has a branch in Faisalabad, serving our valued customers with dedication and passion. Under the supervision of Ali Hassan Siddiqui, our team is committed to maintaining the high standards of quality and service that define our brand. We invite you to join us and enjoy our delicious offerings in a warm and inviting atmosphere!</p>
+    </div>
+    <div class="fsdimage">
+        <img src="fsdbranch.jpg" alt="fsdimage" width="500px">
+    </div>
+</div>
+<div class="distinctions">
+    <center> <h1>OUR DISTINCTIONS</h1></center>
+</div>
+<div class="distinctioncontainer">
+    <div class="distinctionpassage">
+        <h1 style="color: #092b54">ALL PASKISTAN TASTE CHAMPIONS</h1>
+        <p>We are proud to announce that our restaurant has achieved an incredible milestone by winning the All Pakistan Taste Championship four times in a row! This remarkable accomplishment is a testament to our unwavering commitment to quality and excellence in every dish we serve. We are grateful for the continued support of our customers and our dedicated team, who work tirelessly to create unforgettable culinary experiences. Thank you for being a part of our journey!</p>
+      </div>
+    <div class="distinctionimage">
+        <img src="winner1.jpg" alt="distinctionimage">
+    </div>
+</div>
+<div class="message">
+    <h1>OUR MISSION</h1>
+</div>
+<div class="container">
+    <div class="text">
+        <p>
+            Our mission is to deliver exceptional food that combines premium ingredients with expert preparation, all while keeping prices fair and accessible. We believe that everyone deserves to enjoy meals that are not only flavorful and nourishing but also affordable. By prioritizing quality in every aspect,from sourcing the finest ingredients to maintaining high standards in preparation,we aim to create a dining experience that exceeds expectations. Our goal is to be a trusted choice for those seeking delicious, wholesome food without the premium price tag..</p>
+    </div>
+    <div class="image">
+        <img src="finalimage.jpg">
+     </div>
+</div>
+<div class="team">
+    <h1>OUR TEAM</h1>
+</div>
+<div class="teamcontainer">
+    <div class="ali">
+        <img src="ali.avif" alt="">
+        <p>Syed Ali Zargham<br>Naqvi</p>
+    </div>
+    <div class="alihassan">
+        <img src="alihassan.jpg" alt="">
+        <p>Ali Hassan<br>Siddiqui</p>
+    </div>
+    <div class="ahad">
+        <img src="ahad.png" alt="">
+        <p>Abdul Ahad<br>Ilyas</p>
+    </div>
+    <div class="zain">
+        <img src="zain.jpg" alt="">
+        <p>Rana Zain-UL-Abiden<br></p>
+    </div>
+</div>
+<div class="container2">
+    <div class="builder">
+        <img src="builder1.jpg" alt="">
+        <p>Hussain Yaseen</p>
+    </div>
+    <div class="haris">
+        <img src="haris.jpg" alt="">
+        <p>Hairs Nadeem</p>
+    </div>
+    <div class="musfirah">
+        <img src="musfirah.webp" alt="">
+        <p>Musfirah Zainab</p>
+    </div>
+</div>
+
+
+
+
+
+
+
+
+
+
+
+</body>
+</html>

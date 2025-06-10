@@ -1,0 +1,351 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Restaurant Reservation</title>
+
+    <style>
+
+        /* Google Fonts */
+@import url('//fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700&display=swap');
+
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+    scroll-padding-top: 2rem ;
+    list-style: none;
+    text-decoration: none;
+    scroll-behavior: smooth;
+    font-family: "Poppins", sans-serif;
+}
+
+:root{
+    --main-color: #16b978 ;
+    --second-color:#092b54;
+    
+}
+section{
+    padding: 50px 10%;
+
+}
+img{
+    width: 100%;
+}
+
+*::selection{
+    color: aliceblue;
+    background: var(--main-color);
+}
+
+       :root{
+            --main-color: #16b978 ;
+            --second-color:#092b54;
+       }
+
+
+        body {
+             /* background: rgba(0, 0, 0, 0.5) url('istockphoto-1059270034-612x612.jpg') no-repeat center center fixed;  */
+            background:  url(/Images/home.jpg);
+            background-repeat: no-repeat;
+            background-size: cover; 
+            background-size: cover;
+            color: #ffffff;
+            font-family: Arial, sans-serif;
+            scroll-behavior: smooth;
+        }
+
+
+        header{
+    position: fixed;
+    width: 100%;
+    top: 0;
+    right: 0;
+    z-index: 1000;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 15px 10%;
+    background-color: var(--second-color);
+    transition: 0.2s;
+}
+
+.logo{
+    display: flex;
+    padding: 0px auto;
+    align-items: center;
+    font-size: 1.1rem;
+    font-weight:600 ;
+    color: rgb(252, 252, 252);
+    
+    
+}
+
+.logo img{
+    width: 35px;
+    margin-right: 10px;
+}
+.navbar{
+    display: flex;
+}
+
+.navbar a{
+    font-size: 1rem;
+    padding: 10px 20px;
+    color: #ffffff;
+    font-weight: 500;
+}
+
+.navbar a:hover{
+    color: white;
+    background: var(--main-color);
+    border-radius: 4px;
+}
+
+
+        h2 {
+            font-family: Georgia, serif;
+            color: #092b54; 
+            /* text-shadow: 1px 1px 5px #16b978;  */
+        }
+        h3{
+            font-family: Georgia, serif;
+            color: #c1ffd1; 
+             /* text-shadow: 1px 1px 5px #16b978;   */
+             
+        }
+
+        .reservation {
+            margin-left: 480px;
+            margin-top: 70px;
+            width: 30%;
+            /* margin: 30px auto; */
+            background-color: rgba(200, 242, 220, 0.9); 
+            padding: 20px;
+            border: 2px solid #092b54; 
+            border-radius: 10px;
+            
+        }
+
+        label {
+            color: #333333;
+            font-weight: bold;
+        }
+
+        input {
+            width: 90%;
+            padding: 15px;
+            margin: 10px 0;
+            border-radius: 5px;
+            border: 1px solid #cccccc;
+        }
+
+        button {
+            background-color: #16b978; 
+            color: #ffffff;
+            padding: 10px 20px;
+            cursor: pointer;
+            margin: 10px 0;
+            border: none;
+            border-radius: 5px;
+            font-weight: bold;
+        }
+
+        button:hover {
+            background-color: #092b54; 
+        }
+
+      
+        #menu {
+            background-color: rgb(224, 247, 233); 
+            color: #333333;
+            padding: 20px;
+            margin-top: 20px;
+            border-radius: 10px;
+            text-align: left;
+            width: 64%;
+            
+        }
+
+        #gallery img {
+            width: 200px;
+            height: 150px;
+            margin: 10px;
+            border: 2px solid #092b54;
+            border-radius: 5px;
+          
+        }
+
+        #gallery img:hover {
+            transform: scale(1.1);
+        }
+
+
+
+
+        #gallery-heading {
+            font-size: 1.8em;
+            color:var(--second-color); 
+            width: 30%;
+            text-align: center;
+            
+            margin-top: 40px;
+             /* text-shadow: 3px 3px 5px #ffffff;   */
+             font-weight: bold;
+             border-radius: 10px;
+             padding: 10px;
+             /* background-color:var(--second-color);  */
+             box-sizing: border-box;
+             
+             margin-left: 465px;
+            
+        }
+        #testimonials-heading{
+            font-size: 1.8em;
+            color: #072b57; 
+            width: 30%;
+            text-align: center;
+            
+            margin-top: -600px;
+             /* text-shadow: 3px 3px 5px #ffffff;   */
+             font-weight: bold;
+             border-radius: 10px;
+             padding: 10px;
+             background-color: rgb(200, 242, 220); 
+             box-sizing: border-box;
+
+             
+             margin-left: 910px;
+
+        }
+
+
+        /* Testimonials */
+        .testimonials {
+            text-align: left;
+            background-color: var(--second-color); 
+            padding: 10px;
+            border-radius: 10px;
+            margin-top: 20px;
+            width: 30%;
+            margin-left: 900px;
+            margin-top: -300;
+        }
+
+    </style>
+</head>
+
+<body>
+     <!-- Navbar -->
+     <header>
+        <a href="/index.html" class="logo"> <img src="/Images/logo.png" alt="">Fork & Fiction</a>
+        <div class="bx bx-menu" id="menu-icon"></div>
+        
+        <ul class="navbar">
+            <li><a href="/index.html">Home</a></li>
+            <li><a href="/Abdul Ahad/Careers.html">Careers</a></li>
+            <li><a href="/Ali Zargham/aboutus1.html">About</a></li>
+            <li><a href="/Ali Hassan/final modification.html">Reservation</a></li>
+            <li><a href="/Haris/contact-us.html">Contact Us</a></li>
+            <li><a href="/Hussain/FinalProject(hussain).html">News</a></li>
+        </ul>
+     </header>
+   
+
+
+    
+
+
+
+
+    <!-- Left Side: About Us -->
+    <div class="text-box" style="
+            margin-top: 40px;
+            text-align: left; 
+            padding: 15px; 
+            box-sizing: border-box;
+            float: left;
+            width: 30%;
+            background-color: var(--second-color); 
+            padding: 20px;
+            border-radius: 10px;
+            " >
+        <h3>About Our Restaurant</h3>
+        <p>Welcome to an unforgettable dining experience. Our restaurant offers an exclusive tasting menu prepared by renowned chefs. Our cuisine is an art form, with dishes inspired by seasonal ingredients and crafted to perfection.</p>
+        <p>We are committed to providing exceptional service, ensuring that each guest enjoys a luxurious and memorable meal.</p>
+    </div>
+
+    <!-- Reservation Form -->
+    <div class="reservation">
+        <h2>Reserve Your Table</h2>
+        <form style="text-align: left;">
+            <label>Name:</label><br>
+            <input type="text" required><br>
+
+            <label>Phone Number:</label><br>
+            <input type="number" required><br>
+
+            <label>Date:</label><br>
+            <input type="date" ><br>
+
+            <label>Time:</label><br>
+            <input type="time" ><br>
+
+            <label>Number of Guests:</label><br>
+            <input type="number" min="1" max="20"><br>
+
+            <button type="submit">Submit</button>
+        </form>
+    </div>
+
+    <!-- Right Side: Special Offers-->
+    <div class="text-box" style="float: right; 
+        width: 30%; 
+        text-align: left; 
+        padding: 20px; 
+        box-sizing: border-box ;
+        background-color: var(--second-color); 
+            padding: 20px;
+            border-radius: 10px;
+          
+        margin-top: -345px;
+        margin-right: 1px;
+        ">
+        <h3>Special Offers & Events</h3>
+        <p><strong>Exclusive Dinner Experience:</strong> Join us for our limited-time seasonal menu featuring locally sourced ingredients and handpicked drinks.</p>
+        <p><strong>Chef's Table:</strong> Experience an intimate dinner with our chef at the helm. Perfect for special occasions and small gatherings.</p>
+        <p><strong>Private Events:</strong> Reserve our private dining room for your next celebration or corporate event. Contact us for details.</p>
+    </div>
+
+
+    <!-- Menu and Conditions Section -->
+    <section id="menu">
+        <h2>Menu & Conditions</h2>
+        <p><strong>• Tasting Menu:</strong> 28-course menu for 6,900++ Baht per person (Dinner only)</p>
+        <p><strong>• Dietary Restrictions:</strong> We can accommodate most restrictions with 24 hours notice, but no vegan/vegetarian requests.</p>
+        <p><strong>• Arrival:</strong> Arrive 10-15 minutes before your reservation. Late arrivals may get a shortened menu.</p>
+        <p><strong>• Children:</strong> We accommodate children aged 6 or older with a 12-course menu for 2,900++ Baht.</p>
+        <p><strong>• Cancellation Policy:</strong> Cancellations within 24 hours will incur a fee of 3,000 Baht per person.</p>
+        <p><strong>• Dress Code:</strong> Smart casual attire is required.</p>
+    </section>
+
+    <!-- Gallery Section y -->
+    <h2 id="gallery-heading">Our Restaurant Gallery</h2>
+    <div id="gallery" style="justify-content: center; flex-wrap: wrap; display: flex;">
+        <img src="download (2).jpeg">
+        <img src="download (4).jpeg">
+        <img src="download.jpeg">
+        <img src="download (1).jpeg">
+    </div>
+
+    <!-- Testimonials Section  -->
+    <!-- <div id="testimonials-heading"></div>
+    <div class="testimonials">
+        <h2 style="color: var(--main-color);">Customer Testimonials</h2>
+        <p>"The most exquisite dining experience! The flavors were unmatched and the service was exceptional. Highly recommend!" – <em>Imran Khan</em></p>
+        <p>"A culinary masterpiece! The coffee pairing elevated the experience even further. Can't wait to return." – <em>Bushra Bibi</em></p>
+    </div> -->
+
+</body>
+</html>
